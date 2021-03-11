@@ -1,72 +1,209 @@
-# [Start Bootstrap - Freelancer](https://startbootstrap.com/theme/freelancer/)
+# Neumorphism <!-- omit in toc -->
 
-[Freelancer](https://startbootstrap.com/theme/freelancer/) is a one page, freelancer portfolio theme built with [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid, modal windows for each portfolio item, and a working PHP based contact form.
+> Neumorphism designed Jekyll theme for personal websites, portfolios and resumes.
 
-## Preview
+* Featured on [JAMstack Themes](https://jamstackthemes.dev/theme/jekyll-neumorphism/)
+* Featured on [Jekyll Themes](https://jekyll-themes.com/neumorphism/)
+* Featured on [jekyllthemes](http://jekyllthemes.org/themes/neumorphism/)
 
-[![Freelancer Preview](https://assets.startbootstrap.com/img/screenshots/themes/freelancer.png)](https://startbootstrap.github.io/startbootstrap-freelancer/)
+[![Open Issues](https://badgen.net/github/open-issues/longpdo/neumorphism)](https://github.com/longpdo/neumorphism/issues)
+[![License](https://badgen.net/github/license/longpdo/neumorphism)](LICENSE)
+<a href="https://jekyll-themes.com">
+    <img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
+</a>
 
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-freelancer/)**
+[View Demo](https://longpdo.github.io/neumorphism/) · [Report Bug](https://github.com/longpdo/neumorphism/issues) · [Request Feature](https://github.com/longpdo/neumorphism/issues)
 
-## Status
+<!-- TABLE OF CONTENTS -->
+## Table of Contents <!-- omit in toc -->
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-freelancer/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-freelancer.svg)](https://www.npmjs.com/package/startbootstrap-freelancer)
-[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-freelancer.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-freelancer)
-[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-freelancer/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-freelancer)
-[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-freelancer/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-freelancer?type=dev)
+* [About The Project](#about-the-project)
+  * [Built With](#built-with)
+  * [Features](#features)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+  * [Personalize and Customize](#personalize-and-customize)
+    * [_config.yml](#_configyml)
+    * [Github Metadata Plugin](#github-metadata-plugin)
+    * [_data/*.yml](#_datayml)
+    * [Particles.js](#particlesjs)
+* [Contributing](#contributing)
+* [License](#license)
+* [Acknowledgements](#acknowledgements)
 
-## Download and Installation
+<!-- ABOUT THE PROJECT -->
 
-To begin using this template, choose one of the following options to get started:
+## About The Project
 
-- [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/freelancer/)
-- Install using npm: `npm i startbootstrap-freelancer`
-- Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-freelancer.git`
-- [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-freelancer)
+[![Project Screenshot][product-screenshot]](https://longpdo.github.io/neumorphism/)
+
+This is a personal website built with `Jekyll` and hosted on `Github Pages`, which is based on the new `Neumorphism` design trend and was developed with a mobile-first approach. This can be used by developers, who want to showcase their resume and portfolio. If you want to use this for your own website, fork this repository and then refer to [personalize and customize](#personalize-and-customize).
+
+### Built With
+
+* [Jekyll](https://jekyllrb.com/)
+
+### Features
+
+* Mobile-First Responsive Design
+* Animated preloader animation
+* Landing Page with animated background with [particles.js](https://vincentgarreau.com/particles.js/), a Typing Carousel and animated social icons
+* Dark Neumorphism Design on main content
+* [Animations On Scroll](https://michalsnik.github.io/aos/)
+* Filterable *Skills* word cloud
+* [Github's API](https://developer.github.com/v3/) automatically populating the *Open Source Projects* section
+* Gulp dev workflow with [BrowserSync](https://browsersync.io/), [Autoprefixer](https://autoprefixer.github.io/) and `JS` & `SCSS` minifying.
+* [Google Analytics](https://analytics.google.com/)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+`The commands and instructions I provide are for MacOS - please look up the specific commands for your OS on your own.`
+
+### Prerequisites
+
+* [NodeJS](https://nodejs.org/en/)
+
+```sh
+brew install node
+```
+
+If you need to switch between Node versions regurlarly, I would recommend to install Node via [Node Version Manager](https://github.com/nvm-sh/nvm/blob/master/README.md#manual-install).
+
+* [Jekyll](https://jekyllrb.com/)
+
+```sh
+gem install bundler jekyll
+```
+
+For more information, refer to [this](https://jekyllrb.com/docs/installation/).
+
+* [Yarn](https://yarnpkg.com/)
+
+```sh
+npm install -g yarn
+```
+
+### Installation
+
+> Recommended way: If you want to contribute to this theme or open issues due to problems implementing this on your own, I would recommend forking the repository directly. This makes it easier for me to solve open issues and questions or check pull requests.
+
+1.1: Fork the repository (using the `Fork` button at the top) and then clone the repository
+
+```sh
+# Replace {YOUR_USERNAME} with your actual username
+git clone https://github.com/{YOUR_USERNAME}/neumorphism.git
+```
+
+or
+
+1.2: Create your own repository (using the green `Use this template` button at the top) and then clone the repository
+
+```sh
+# Replace {YOUR_USERNAME}, {YOUR_REPOSITORY} with the actual values
+git clone https://github.com/{YOUR_USERNAME}/{YOUR_REPOSITORY}.git
+```
+
+2: Change directory into neumorphism
+
+```sh
+cd neumorphism
+```
+
+3: Install dependencies
+
+```sh
+yarn
+```
+
+<!-- USAGE EXAMPLES -->
 
 ## Usage
 
-### Basic Usage
+* Run and develop locally with live server at `http://localhost:4000`, this will also build production-ready `JS` and `SCSS` assets with every change
 
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+```sh
+gulp
+```
 
-### Advanced Usage
+* After committing and pushing, see the `Settings` page of your repository to see where your site is published at via `Github Pages`.
 
-Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+### Personalize and Customize
 
-#### npm Scripts
+#### _config.yml
 
-- `npm run build` builds the project - this builds assets, HTML, JS, and CSS into `dist`
-- `npm run build:assets` copies the files in the `src/assets/` directory into `dist`
-- `npm run build:pug` compiles the Pug located in the `src/pug/` directory into `dist`
-- `npm run build:scripts` brings the `src/js/scripts.js` file into `dist`
-- `npm run build:scss` compiles the SCSS files located in the `src/scss/` directory into `dist`
-- `npm run clean` deletes the `dist` directory to prepare for rebuilding the project
-- `npm run start:debug` runs the project in debug mode
-- `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
+Edit `_config.yml` to personalize your site. For documentation, refer to [docs/config.md](https://github.com/longpdo/neumorphism/blob/master/docs/config.md).
 
-You must have npm installed in order to use this build environment.
+#### Github Metadata Plugin
 
-## Bugs and Issues
+If you want to automatically have your Github repositories pulled for the *Open Source Projects* section, then you also need to authenticate yourself for the Github Metadata plugin to work.
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-freelancer/issues) here on GitHub or leave a comment on the [theme overview page at Start Bootstrap](https://startbootstrap.com/theme/freelancer/).
+You need to generate a new personal access token on GitHub:
 
-## About
+* Go to the [Github Token site](https://github.com/settings/tokens/new)
+* Select the scope `public_repository`, and add a description.
+* Confirm and save the settings. Copy the token you see on the page.
+* Create a `.env` file inside your repository and add your generated `JEKYLL_GITHUB_TOKEN`:
 
-Start Bootstrap is an open source library of free Bootstrap themes and templates. All of the free themes and templates on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+```text
+JEKYLL_GITHUB_TOKEN=0YOUR0GENERATED0TOKEN0
+```
 
-- <https://startbootstrap.com>
-- <https://twitter.com/SBootstrap>
+To complete the configuration for the Github Metadata plugin, you also need to change the value of `repository` inside `_config.yml`. After this, you should the Github Metadata plugin should work properly.
 
-Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+For optimal results, you should make sure, that every Github project, you want included on this portfolio, has added following informations on Github:
 
-- <https://davidmiller.io>
-- <https://twitter.com/davidmillerhere>
-- <https://github.com/davidtmiller>
+* Description
+* Homepage link, if there is a live version of it
+* Topics
 
-Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+Example:
+![Github Repository Information Example][github-repo-info]
 
-## Copyright and License
+#### _data/*.yml
 
-Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-freelancer/blob/gh-pages/LICENSE) license.
+Edit files inside `_data` to add information to the portfolio. For documentation, refer to [docs/data.md](https://github.com/longpdo/neumorphism/blob/master/docs/data.md).
+
+#### Particles.js
+
+Edit `assets/particles.json` to customize the landing page backgorund animation. For more information, refer to [this](https://github.com/VincentGarreau/particles.js/#options).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+* [Font Awesome](https://fontawesome.com/)
+* [Normalize.css](https://necolas.github.io/normalize.css/)
+* Based Preloader on [Codrin Pavel's](https://codepen.io/zerospree/pen/aCjAz) version
+* Typing Carousel by [Gregory Schier](https://codepen.io/gschier/pen/jkivt)
+* Social Button Animation by [Stéphane Lyver](https://codepen.io/wouwi/pen/Lwrmi)
+* Adapted [Damian Jankowski's](https://codepen.io/dolaron/pen/rNadmOE) color palette for the neumorphism design
+* Based Timeline on [Krishna Babu's](https://codepen.io/krishnab/pen/OPwqbW) version
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+[product-screenshot]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/screenshot.gif
+[github-repo-info]: https://raw.githubusercontent.com/longpdo/neumorphism/master/docs/github-repo-info.png
